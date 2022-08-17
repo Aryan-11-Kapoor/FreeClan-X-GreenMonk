@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Announcement = () => {
-  return <Container>Super Deal! Free Shipping on Orders Over $50</Container>;
+  return <Container>Try the new Limited Edition flavour POSEIDON'S THUNDER now!!!</Container>;
 };
 
 export default Announcement;
