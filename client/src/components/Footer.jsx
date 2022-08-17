@@ -86,13 +86,11 @@ const Payment = styled.img`
 
 const Footer = () => {
   return (
-    <Container>
+    <Container  >
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo style={{ color: "green"}}>GREENMONK.</Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
+          Product made to energize the youth, now in 4 EXCITING FLAVOURS!!!
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
@@ -110,30 +108,29 @@ const Footer = () => {
         </SocialContainer>
       </Left>
       <Center>
-        <Title>Useful Links</Title>
+        <Title style={{ color: "green"}}>Useful Links</Title>
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
-          <ListItem>Accessories</ListItem>
+          
+          
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Terms</ListItem>
+          <ListItem>New Offerings</ListItem>
+          <ListItem>Classics</ListItem>
+          <ListItem>Terms and Conditions</ListItem>
         </List>
       </Center>
       <Right>
-        <Title>Contact</Title>
-        <ContactItem>
-          <Room style={{marginRight:"10px"}}/> 622 Dixie Path , South Tobinchester 98336
+        <Title style={{ color: "green"}}>Contact</Title>
+        <ContactItem >
+          <Room style={{marginRight:"10px"}}/> PES UNIVERSITY EC CAMPUS
         </ContactItem>
         <ContactItem>
-          <Phone style={{marginRight:"10px"}}/> +1 234 56 78
+          <Phone style={{marginRight:"10px"}}/> 9964755636
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@lama.dev
+          <MailOutline style={{marginRight:"10px"}} /> contact@GREENMONK.dev
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
