@@ -57,10 +57,10 @@ const ProductList = () => {
     <Container>
       <Navbar />
       <Announcement />
-      <Title>{cat}</Title>
+      <Title>GREENMONK ENERGY DRINK</Title>
       <FilterContainer>
         <Filter>
-          <FilterText>Filter Products:</FilterText>
+          <FilterText>How much energy do you need</FilterText>
           
           <Select name="size" onChange={handleFilter}>
             <Option disabled >
