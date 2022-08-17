@@ -114,18 +114,18 @@ const Navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input placeholder="Search" />
-            <Search style={{ color: "gray", fontSize: 16 }} />
+            <Search style={{ color: "green", fontSize: 18 }} />
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+          <Logo style={{ color: "green"}}>GREENMONK.</Logo>
         </Center>
         <Right>
-          <MenuItem onClick={handlelogout}>Logout</MenuItem>
+          <MenuItem onClick={handlelogout} >Logout</MenuItem>
           
-          <MenuItem onClick={handleregister}>REGISTER</MenuItem>
+          <MenuItem onClick={handleregister} style={{ color: "green", fontSize: 14 }}>REGISTER</MenuItem>
           
-          <MenuItem onClick={handlelogin}>SIGN IN</MenuItem>
+          <MenuItem onClick={handlelogin} style={{ color: "green", fontSize: 14 }}>SIGN IN</MenuItem>
           <Link to="/cart">
           <MenuItem>
             <Badge badgeContent={quantity} color="primary">
