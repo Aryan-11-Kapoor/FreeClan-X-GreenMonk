@@ -104,6 +104,7 @@ const Navbar = () => {
           <Logo>LAMA.</Logo>
         </Center>
         <Right>
+          <MenuItem onClick={handlelogout}>Logout</MenuItem>
           <Link to="/register">
           <MenuItem>REGISTER</MenuItem></Link>
           <Link to="/login">
