@@ -30,7 +30,8 @@ const Info = styled.div`
 
 const Title = styled.h1`
     color:white;
-    margin-bottom: 20px;
+    margin-top: -80px;
+    margin-bottom:10px;
 `;
 
 const Button = styled.button`
