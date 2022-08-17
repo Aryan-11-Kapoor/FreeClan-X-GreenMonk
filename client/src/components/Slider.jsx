@@ -88,6 +88,9 @@ const Slider = () => {
       setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
     }
   };
+  const handleshop = (e)=>{
+    window.scrollBy(0, 750);
+  };
 
   return (
     <Container>
@@ -103,7 +106,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <Button onClick={handleshop}>SHOW NOW</Button>
             </InfoContainer>
           </Slide>
         ))}
