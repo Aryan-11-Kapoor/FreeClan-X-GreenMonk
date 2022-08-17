@@ -165,7 +165,10 @@ const Button = styled.button`
 const Cart = () => {
   const cart = useSelector(state=>state.cart)
 const [stripetoken,setstripetoken]= useState(null);
-const history = useNavigate()
+const navigate = useNavigate()
+const handlecontinue = (e)=>{
+    navigate("/");
+};
 const onToken = (token)=>{
   setstripetoken(token);
 };
@@ -188,9 +191,9 @@ const onToken = (token)=>{
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
-          <TopButton>CONTINUE SHOPPING</TopButton>
+          <TopButton onClick={handlecontinue}>CONTINUE SHOPPING</TopButton>
           <TopTexts>
-            <TopText>Shopping Bag(2)</TopText>
+            
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
           
