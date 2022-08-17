@@ -3,7 +3,7 @@ import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
-import {useSelector} from "react-redux";
+import {useSelector,useDispatch} from "react-redux";
 import {Link} from 'react-router-dom';
 import {logout} from "../redux/userSlice";
 import {useNavigate} from "react-router-dom";
@@ -91,7 +91,22 @@ ${mobile({ height: "50px" })};
 
 const Navbar = () => {
   const quantity = useSelector(state=>state.cart.quantity)
-  
+  const dispatch= useDispatch();
+  const navigate = useNavigate();
+  const handlelogout=(e)=>{
+    e.preventDefault();
+    dispatch(logout());
+
+    navigate("/login")
+  }
+  const handleregister=(e)=>
+  {
+    navigate("/register");
+  }
+  const handlelogin=(e)=>
+  {
+    navigate("/login");
+  }
   return (
     <Container>
       <Wrapper>
@@ -107,10 +122,10 @@ const Navbar = () => {
         </Center>
         <Right>
           <MenuItem onClick={handlelogout}>Logout</MenuItem>
-          <Link to="/register">
-          <MenuItem>REGISTER</MenuItem></Link>
-          <Link to="/login">
-          <MenuItem>SIGN IN</MenuItem></Link>
+          
+          <MenuItem onClick={handleregister}>REGISTER</MenuItem>
+          
+          <MenuItem onClick={handlelogin}>SIGN IN</MenuItem>
           <Link to="/cart">
           <MenuItem>
             <Badge badgeContent={quantity} color="primary">
