@@ -3,6 +3,7 @@ import { mobile } from "../responsive";
 import { useDispatch, useSelector } from "react-redux";
 import {useState} from "react";
 import { register } from "../redux/apicalls";
+import {useNavigate} from "react-router-dom";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -61,11 +62,11 @@ const Register = () => {
   const [password,setuserpassword]=useState("")
   const [email,setusermail]=useState("")
   const dispatch = useDispatch(); 
-  
+  const navigate = useNavigate()
   const handleregister=(e)=>{
     e.preventDefault()
     register(dispatch,{username,password,email});
-    
+    navigate("/login")
   }
   return (
     <Container>
