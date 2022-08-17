@@ -14,9 +14,9 @@ const Container = styled.div`
 `;
 
 const Arrow = styled.div`
-  width: 50px;
-  height: 50px;
-  background-color: #fff7f7;
+  width: 100px;
+  height: 100px;
+  background-color: "green";
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -48,13 +48,12 @@ const Slide = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  height: 70%;
+  height: 100%;
   flex: 1;
 `;
 
 const Image = styled.img`
-  height: 90%;
-  width:100%;
+  height: 80%;
 `;
 
 const InfoContainer = styled.div`
@@ -89,13 +88,10 @@ const Slider = () => {
       setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
     }
   };
-  const handleshop = (e)=>{
-    window.scrollBy(0, 750);
-  };
 
   return (
     <Container>
-      <Arrow direction="left" onClick={() => handleClick("left")}>
+      <Arrow direction="left" onClick={() => handleClick("left")} style={{ color: "green" , width: "100px" }}>
         <ArrowLeftOutlined />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
@@ -107,12 +103,12 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button onClick={handleshop}>SHOW NOW</Button>
+              <Button>SHOW NOW</Button>
             </InfoContainer>
           </Slide>
         ))}
       </Wrapper>
-      <Arrow direction="right" onClick={() => handleClick("right")}>
+      <Arrow direction="right" onClick={() => handleClick("right")} style={{ color: "green" , width: "100px" }}>
         <ArrowRightOutlined />
       </Arrow>
     </Container>
