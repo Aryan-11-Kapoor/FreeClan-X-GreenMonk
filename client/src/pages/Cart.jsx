@@ -211,7 +211,7 @@ const onToken = (token)=>{
                   <ProductId>
                     <b>ID:</b> {product._id}
                   </ProductId>
-                  <ProductColor color="black" />
+                  
                   <ProductSize>
                     <b>Size:</b> {product.size}
                   </ProductSize>
@@ -223,7 +223,7 @@ const onToken = (token)=>{
                   <ProductAmount>{product.quantity}</ProductAmount>
                   <Remove />
                 </ProductAmountContainer>
-                <ProductPrice>$ {product.price}</ProductPrice>
+                <ProductPrice>Rs {product.price}</ProductPrice>
               </PriceDetail>
             </Product>))}
             <Hr />
@@ -232,26 +232,26 @@ const onToken = (token)=>{
             <SummaryTitle>ORDER SUMMARY</SummaryTitle>
             <SummaryItem>
               <SummaryItemText>Subtotal</SummaryItemText>
-              <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
+              <SummaryItemPrice>Rs {cart.total}</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Estimated Shipping</SummaryItemText>
-              <SummaryItemPrice>$ 5.90</SummaryItemPrice>
+              <SummaryItemPrice>Rs 150</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Shipping Discount</SummaryItemText>
-              <SummaryItemPrice>$ -5.90</SummaryItemPrice>
+              <SummaryItemPrice>Rs -150</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
+              <SummaryItemPrice>Rs {cart.total}</SummaryItemPrice>
             </SummaryItem>
             <StripeCheckout
-            name="Bhara"
+            name="GREENMONK"
             billingAddress
             shippingAddress
-            description={`Your total is Rs${cart.total}`}
-            amount={cart.total*100}
+            description={`Your total is Rs ${cart.total}`}
+            amount={cart.total}
             token={onToken}
             stripeKey={KEY}
             >
