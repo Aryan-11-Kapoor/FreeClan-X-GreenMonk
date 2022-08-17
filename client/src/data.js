@@ -27,19 +27,19 @@ export const sliderItems = [
       id: 1,
       img: "https://i.ibb.co/H4zP7Xg/Whats-App-Image-2022-08-17-at-19-17-58-1.jpg",
       title:<span style={{color: 'red',fontSize:'1.5rem',fontWeight:'bold'}}>POWER OF THREE</span> ,
-      cat:"pack
+      cat:"Special Pack of Three",
     },
     {
       id: 2,
       img: "https://i.ibb.co/82psm8m/Whats-App-Image-2022-08-15-at-20-53-12-2.jpg",
       title: <span style={{color: 'black',fontSize:'1.5rem',fontWeight:'bold'}}>ENERGETIC</span>,
-      cat:"man"
+      cat:"Greenmonk Energy Drink"
     },
     {
       id: 3,
       img: "https://i.ibb.co/J5czp8C/Whats-App-Image-2022-08-15-at-20-53-12.jpg",
       title: <span style={{color: 'red',fontSize:'1.5rem',fontWeight:'bold'}}>REFRESHING</span>,
-      cat:"refresh"
+      cat:"Go Bananas"
     },
   ];
 
