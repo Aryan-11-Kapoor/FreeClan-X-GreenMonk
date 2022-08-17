@@ -54,7 +54,7 @@ const Products = ({cat,filters,sort}) => {
       else{
         
           setFilteredProducts((prev)=>
-            [...prev].sort((a,b)=>a.price-b.price));
+            [...prev].sort((a,b)=>b.price-a.price));
       }
   },[sort]);
 
